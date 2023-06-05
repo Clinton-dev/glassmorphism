@@ -21,6 +21,21 @@
     </div>
 
     <h1>Glasspolymorphism Realized</h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const glass = document.getElementById('glass')
+
+        const tl = gsap.timeline({ defaults: { ease: "power2.inOut", duration: 1.5 } })
+
+        tl.from('img', { x: '-10%', opacity: 0 })
+            .from('.container', { opacity: 0, delay: .5, duration: 1 }, '-=1.5')
+            .from('.container', { x: '-20%', backdropFilter: 'blur(0px)' })
+            .from('.seq', { y: -30, opacity: 0, stagger: .2, duration: .5 }, "-=.5")
+            .from('h1', { y: 20, clipPath: 'inset(0 0 100% 0)' }, '-=.8')
+    </script>
 </body>
 
 </html>

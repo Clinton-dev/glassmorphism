@@ -47,4 +47,10 @@ img {
 }
 .container p {
   margin: 0;
+}
+
+h1 {
+  font-size: 4em;
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
 }/*# sourceMappingURL=main.css.map */
