@@ -1,0 +1,50 @@
+body {
+  background: rgb(200, 220, 231);
+  color: black;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 14em 14em 14em 20em;
+}
+
+.circle {
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+  background: rgb(160, 59, 255);
+}
+
+img {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  height: 100vh;
+  left: 0;
+}
+
+.container {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 3em;
+  border-radius: 3em;
+  position: relative;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+.container h2 {
+  font-size: 1.7em;
+}
+.container h1, .container h2 {
+  margin: 0;
+}
+.container p {
+  margin: 0;
+}/*# sourceMappingURL=main.css.map */
